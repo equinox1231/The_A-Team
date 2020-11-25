@@ -1,27 +1,23 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
-const port = process.env.PORT || 3001;
-
+var express = require("express");
+var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+var http = require('http')
+const server = http.createServer(app);
 var usersController = require('./controllers/userController');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+var cors = require('cors');
 
 
+app.use(cors())
 app.use('/', usersController);
 
 
 
 
-app.get('/api/hello', (req, res) => {
-  res.send({ express: 'Hello From Express' });
+server.listen(process.env.PORT || 3000, function () {
+    console.log("Apps is on localhost:3000");
+
 });
 
-app.post('/api/world', (req, res) => {
-  console.log(req.body);
-  res.send(
-    `I received your POST request. This is what you sent me: ${req.body.post}`,
-  );
-});
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
+module.exports = app;
