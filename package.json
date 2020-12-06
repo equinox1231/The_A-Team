@@ -15,8 +15,6 @@
     "bootstrap": "^4.5.3",
     "cfenv": "^1.2.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-joi-validator": "^2.0.1",
     "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
     "jwt-simple": "^0.5.6",
