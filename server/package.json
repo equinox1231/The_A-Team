@@ -1,42 +1,17 @@
 {
-  "name": "MERN-ML",
+  "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "author": {
-    "name": "Osama"
-  },
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "@cloudant/cloudant": "^4.2.3",
-    "body-parser": "^1.19.0",
-    "bootstrap": "^4.5.3",
-    "cfenv": "^1.2.2",
+    "axios": "0.19.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "joi": "^14.3.1",
+    "express": "4.17.1",
     "jsonwebtoken": "^8.5.1",
     "jwt-simple": "^0.5.6",
-    "materialize-css": "^1.0.0",
-    "mongoose": "^5.10.16",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
-    "react-favicon": "0.0.18",
-    "react-redux": "^7.2.2",
-    "react-router-dom": "^5.2.0",
-    "redux": "^4.0.5",
-    "redux-form": "^8.3.7",
-    "redux-thunk": "^2.3.0"
-  },
-  "devDependencies": {
-    "concurrently": "^4.1.0"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "create-react-app"
-  ]
+    "mongoose": "^5.11.4"
+  }
 }

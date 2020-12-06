@@ -6,12 +6,10 @@ app.use(bodyParser.json())
 var http = require('http')
 const server = http.createServer(app);
 var usersController = require('./controllers/userController');
-var cors = require('cors');
 const path = require('path');
 
 
 
-app.use(cors())
 app.use('/', usersController);
 
 const buildPath = path.join(__dirname, '..', 'build');
