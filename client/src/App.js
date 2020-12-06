@@ -3,6 +3,7 @@ import './App.css';
 import Headers from './components/header'
 import HomePage from './components/HomePage'
 import Favicon from 'react-favicon';
+<<<<<<< HEAD
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
@@ -19,6 +20,10 @@ const store = createStore(
   },
   applyMiddleware(reduxThunk)
 );
+=======
+import { BrowserRouter , Switch, Route, } from 'react-router-dom'
+//import reducers from './reducers'
+>>>>>>> b27b320c530bf41ad22eae055be78b36f4f757ba
 
 class App extends Component {
   constructor(props) {
@@ -27,6 +32,7 @@ class App extends Component {
 
   render() {
 
+<<<<<<< HEAD
     return (
       <Provider store={store}>
         <div className="App">
@@ -43,6 +49,22 @@ class App extends Component {
       </Provider>
     );
   }
+=======
+      <div className="App">
+      
+        <Favicon url="" />
+        <Headers />
+          <BrowserRouter>
+            <Switch>
+            
+              <Route path="/" exact component={HomePage} />
+              
+            </Switch>
+        </BrowserRouter>
+      </div>
+  );
+}
+>>>>>>> b27b320c530bf41ad22eae055be78b36f4f757ba
 }
 
 export default App;
