@@ -12,6 +12,9 @@ var user = new Schema({
     },
     country: {
         type: String
+    },
+    usertype:{
+        type:String
     }
 }, { collection: "user" });
 module.exports = mongoose.model('user', user)
