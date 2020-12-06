@@ -7,6 +7,8 @@ var http = require('http')
 const server = http.createServer(app);
 var usersController = require('./controllers/userController');
 var cors = require('cors');
+const path = require('path');
+
 
 
 app.use(cors())
