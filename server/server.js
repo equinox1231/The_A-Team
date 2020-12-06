@@ -15,9 +15,8 @@ app.use('/', usersController);
 const buildPath = path.join(__dirname, '..', 'build');
 app.use(express.static(buildPath));
 
-const PORT = process.env.PORT || 5000;
 
-server.listen(PORT, function () {
+server.listen(process.env.PORT || 5000, function () {
     console.log("Apps is on localhost:5000");
 
 });
