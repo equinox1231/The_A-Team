@@ -4,10 +4,8 @@ import Link from 'react';
 import { connect } from 'react-redux';
 // import * as actions from '../../actions';
 
-class Signout extends Component {
-  componentDidMount() {
-    this.props.signout();
-  }
+class signOut extends Component {
+  
 
   render() {
     return (
@@ -15,7 +13,7 @@ class Signout extends Component {
       <div>
           <div className="container">
 
-          <h3>Thank you for visiting LiveUp!!</h3>
+          <h3>Thank you for visiting SignOut!!</h3>
          
           </div>
       </div>
@@ -24,4 +22,4 @@ class Signout extends Component {
   }
 }
 
-export default connect(null, actions)(Signout);
+export default signOut;
