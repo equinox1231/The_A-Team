@@ -3,7 +3,7 @@ import './App.css';
 import Headers from './components/header'
 import HomePage from './components/HomePage'
 import Favicon from 'react-favicon';
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter , Switch, Route, } from 'react-router-dom'
 //import reducers from './reducers'
 
 class App extends Component {
@@ -19,11 +19,13 @@ render() {
       
         <Favicon url="" />
         <Headers />
-          <Switch>
-           
-            <Route path="/" exact component={HomePage} />
+          <BrowserRouter>
+            <Switch>
             
-        </Switch>
+              <Route path="/" exact component={HomePage} />
+              
+            </Switch>
+        </BrowserRouter>
       </div>
   );
 }
