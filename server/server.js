@@ -12,16 +12,13 @@ var cors = require('cors');
 app.use(cors())
 app.use('/', usersController);
 
-app.use(express.static(path.join(__dirname, 'build')));
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
 
+const PORT = process.env.PORT || 5000;
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
-
-server.listen(process.env.PORT || 3000, function () {
-    console.log("Apps is on localhost:3000");
+server.listen(PORT, function () {
+    console.log("Apps is on localhost:5000");
 
 });
 

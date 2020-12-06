@@ -5,13 +5,12 @@ import 'materialize-css/dist/js/materialize.min.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
 
-//Views
 import signIn from './views/signIn/signIn'
 import signOut from './views/signOut/signOut'
 import signUp from './views/signUp/signUp'
 import homePage from './views/homePage/homePage'
 
-//Components
+
 import Header from './components/header/header'
 
 
