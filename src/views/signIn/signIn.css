@@ -1,0 +1,48 @@
+body {
+    /* background-image: url(../../images/signin-bg.jpeg);
+    background-size: cover; */
+    background: rgba(255,192,203, .1);
+    color: #fff;
+}
+
+.login {
+    margin-top: 70px;
+    max-width: 500px;
+}
+
+.login .card {
+    background: rgba(0, 0, 0, .5);
+    /* border-radius: 50px; */
+}
+
+.login .matte-black {
+    background-color: #1b1b1b;
+}
+
+/* .login .card-action {
+    border-radius: 10px;
+} */
+
+.login h3 {
+    font-size: 32px;
+}
+
+.login label {
+    font-size: 16px;
+    color: #949494;
+    text-align: left;
+}
+
+.login input {
+    font-size: 20px !important;
+}
+
+.login button {
+    margin: 10px;
+}
+
+.login button:hover {
+    padding: 0 40px;
+}
+
+
